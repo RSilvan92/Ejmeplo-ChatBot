@@ -63,7 +63,13 @@ controller.hears(['^hello'], 'direct_message,direct_mention', function(bot, mess
     var email = message.user; // Spark User that created the message orginally 
     bot.reply(message, "Hello <@personEmail:" + email + ">");
 });
-
+//
+// Bots commands here
+//Español
+controller.hears(['^Hola'], 'direct_message,direct_mention', function(bot, message) {
+    var email = message.user; // Spark User that created the message orginally 
+    bot.reply(message, "Hola <@personEmail:" + email + ">");
+});
 
 //
 // Fallback command
