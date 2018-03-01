@@ -3,7 +3,7 @@
 //
 module.exports = function (controller) {
 
-    controller.hears('^clone room','direct_message,direct_mention', function (bot, message) {
+    controller.hears('^cloneroom','direct_message,direct_mention', function (bot, message) {
         var email = message.user;
         var CiscoSpark = require ('node-ciscospark');
         var async = require ('async');
