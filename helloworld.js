@@ -71,11 +71,19 @@ controller.hears(['^Hola'], 'direct_message,direct_mention', function(bot, messa
     bot.reply(message, "Hola <@personEmail:" + email + ">");
 });
 //
-// Respuesta
+// Respuesta 1 borde
 //
 controller.hears(['^No entiendes una mierda'], 'direct_message,direct_mention', function(bot, message) {
     var email = message.user; // Spark User that created the message orginally 
     bot.reply(message, "Entiendo lo que me sale de la polla <@personEmail:" + email + ">");
+});
+
+//
+// Bots commands here
+//Victor Español
+controller.hears(['^¿Como la tiene Victor Sanchez?'], 'direct_message,direct_mention', function(bot, message) {
+    var email = message.user; // Spark User that created the message orginally 
+    bot.reply(message, "Digamos que está bastante por debajo de la media, pero siempre le quedara el monster <@personEmail:" + email + ">");
 });
 
 //
