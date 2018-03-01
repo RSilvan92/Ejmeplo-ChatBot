@@ -1,7 +1,7 @@
 //
 // Command: addperson
 module.exports = function(controller) {
-    controller.hears(["add"], "direct_message,direct_mention", function(
+    controller.hears(["add" + email], "direct_message,direct_mention", function(
       bot,
       message
     ) {
