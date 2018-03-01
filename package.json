@@ -4,6 +4,7 @@
   "description": "Cisco Spark Bots built with the Botkit framework",
   "main": "helloworld.js",
   "scripts": {
+    "start": "cross-env SPARK_TOKEN=ODA2NWZlY2MtMWJlMC00YjQzLWJkMmQtYjllNzc1M2NkNDg3NzI4ZDBmYjYtMWM5 PUBLIC_URL=https://pruebabotcisco.herokuapp.com SECRET=empty node helloworld.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,6 +20,7 @@
     "ciscospark-websocket-events": "^1.1.0",
     "debug": "^2.3.2",
     "node-emoji": "^1.5.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "cross-env": "^5.1.3"
   }
 }
