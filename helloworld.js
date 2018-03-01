@@ -70,6 +70,13 @@ controller.hears(['^Hola'], 'direct_message,direct_mention', function(bot, messa
     var email = message.user; // Spark User that created the message orginally 
     bot.reply(message, "Hola <@personEmail:" + email + ">");
 });
+//
+// Respuesta
+//
+controller.hears(['^No entiendes una mierda'], 'direct_message,direct_mention', function(bot, message) {
+    var email = message.user; // Spark User that created the message orginally 
+    bot.reply(message, "Entiendo lo que me sale de la polla <@personEmail:" + email + ">");
+});
 
 //
 // Fallback command
